@@ -7,7 +7,7 @@
 }
 h2.titulo{
     color:white;
-    font-size: 28px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -59,7 +59,7 @@ header nav ul{
 header nav ul li{
     display: inline-block; /*em linha*/
     padding: 0 40px; /*altura e largura*/
-    font-size: 23px;
+    font-size: 18px;
 }
 
 
@@ -88,6 +88,7 @@ section .sobre .flex {
 }
 .sobre .nome{
     color: aqua;
+    
 }
 .sobre .texto-sobre span {
     color:beige;
@@ -95,10 +96,13 @@ section .sobre .flex {
 }
 .sobre .texto-sobre h2{
     padding: 50px;
+    font-size: 22px;
+    
 }
 .sobre .texto-sobre h3{
     padding: 30px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 18px;
 
 }
 
@@ -125,6 +129,7 @@ section.formacao{
 
 .formacao .texto-formacao h2{
     padding: 50px;
+    font-size: 22px;
     
 
 
@@ -132,6 +137,7 @@ section.formacao{
 .formacao .texto-formacao h3{
     padding: 30px;
     line-height: 25px;
+    font-size: 16px;
 }
 .formacao .texto-formacao h3 span{
     color: beige;
@@ -156,15 +162,18 @@ section.portfolio{
 .portfolio h2 /*titulo portfolio*/{
     color: aqua;
     padding: 50px;
+    font-size: 22px;
 }
 .portfolio h3 /*texto portfolio*/{
     color:beige;
     padding: 30px;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 
 .portfolio .video-portfolio video{
-    padding: 50px;
+    padding: 10px;
 
 }
 
