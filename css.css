@@ -1,0 +1,229 @@
+/*Aqui, criei um estilo que usei em varias classes ao longo do projeto, então agrupei num estilo geral*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+h2.titulo{
+    color:white;
+    font-size: 28px;
+    text-align: center;
+}
+
+
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+}
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.flex{
+    display:flex; /*todas as classes que estão dentro disso vao ficar ao lado uma das outras*/
+}
+/* CABEÇALHO */
+header{
+    padding:40px 4%;
+    
+
+}
+header .interface{
+    display: block;
+    align-items: center;
+    justify-content: space-between; 
+    /* deixar os itens o mais distante possível um dos outros */
+    position: fixed; /*para não sumir conforme vai descendo o página*/
+}
+header a {
+    color: rgba(33, 123, 133, 0.504);
+    text-decoration: none; /*pra ficar sem sublinhado*/
+    
+}
+header a:hover{ /* vai aumentar a fonte e a cor quando o cursor passar em cima*/
+    color: rgb(133, 108, 108);
+    transform: scale(1.10); 
+    
+}
+header nav ul{
+    list-style-type: none;
+    display: flex; /* Para usar flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 0;
+    margin: 0;
+    
+}
+header nav ul li{
+    display: inline-block; /*em linha*/
+    padding: 0 40px; /*altura e largura*/
+    font-size: 23px;
+}
+
+
+/*ESTILO SOBRE*/
+section.sobre{
+    
+    padding: 40px 4%;
+    margin-bottom: 150px; /*para ficar mais distante das outras seções*/
+    margin-top: 50px;
+}
+.sobre .img-sobre img{
+    padding: 50px;
+    height: 500px;
+    
+
+    
+}
+.sobre .texto-sobre {
+    color:aqua;
+}
+section .sobre .flex {
+    align-items: center;
+    gap : 50px;
+    
+    
+}
+.sobre .nome{
+    color: aqua;
+}
+.sobre .texto-sobre span {
+    color:beige;
+
+}
+.sobre .texto-sobre h2{
+    padding: 50px;
+}
+.sobre .texto-sobre h3{
+    padding: 30px;
+    line-height: 25px;
+
+}
+
+
+
+
+/*ESTILO FORMACAO*/
+section.formacao{
+    padding:40px 4%;
+    margin-bottom: 150px;
+    
+    
+
+}
+.formacao .img-formacao img{
+    padding: 50px;
+    height: 550px;
+}
+.formacao .texto-formacao{
+    color:aqua ;
+    
+}
+
+
+.formacao .texto-formacao h2{
+    padding: 50px;
+    
+
+
+}
+.formacao .texto-formacao h3{
+    padding: 30px;
+    line-height: 25px;
+}
+.formacao .texto-formacao h3 span{
+    color: beige;
+}
+section .formacao .flex{
+    align-items: center;
+    gap : 50px;
+}
+.formacao .texto{
+    color: aqua;
+}
+
+
+/*ESTILO PORTFOLIO*/
+section.portfolio{
+    padding: 40px 4%;
+}
+.portfolio .flex{
+    display:block;
+    
+}
+.portfolio h2 /*titulo portfolio*/{
+    color: aqua;
+    padding: 50px;
+}
+.portfolio h3 /*texto portfolio*/{
+    color:beige;
+    padding: 30px;
+}
+.portfolio .video-portfolio{
+    margin: 50px;
+    align-content: center;
+}
+.portfolio .video-portfolio video{
+    align-items: center;
+    padding: 50px;
+}
+
+
+/*ESTILO CONTATO*/
+section.contato{
+    padding: 40px 4%;
+    margin-top: 100px;
+    
+}
+form{
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /*cada um fica em uma coluna*/
+    gap: 10px; /*distancia entre as colunas*/
+}
+form input {
+    width: 100%; /*pra ficar 450px*/
+    padding: 15px 10px; /*tamanho que ocupam*/
+    background-color: rgba(200, 200, 200, 0.258);
+    border: 0;
+    border-radius: 50px;
+    font-size: 15px;
+    color: aqua;
+    
+}
+form textarea{
+    resize: none; /*para não ser redimensionado*/
+    max-height: 300px;
+    width: 100%;
+    padding: 15px 10px; /*tamanho que ocupam*/
+    background-color: rgba(200, 200, 200, 0.258);
+    border: 0;
+    border-radius: 50px;
+    font-size: 15px;
+    
+    
+}
+form input::placeholder{ /*pra aplicar a cor direto no placeholder*/
+    color: aqua;
+}
+form textarea::placeholder{
+    color: aqua;
+}
+
+
+
+
+form .botao-de-enviar{
+    padding: 20px;
+    color: aqua;
+    text-align: center;
+}
+form .botao-de-enviar input{
+    width: 250px;
+    font-size: 20px;
+    cursor: pointer;
+}
