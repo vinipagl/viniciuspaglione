@@ -150,7 +150,7 @@ section.portfolio{
     padding: 40px 4%;
 }
 .portfolio .flex{
-    display:block;
+    display:flex;
     
 }
 .portfolio h2 /*titulo portfolio*/{
@@ -161,13 +161,11 @@ section.portfolio{
     color:beige;
     padding: 30px;
 }
-.portfolio .video-portfolio{
-    margin: 50px;
-    align-content: center;
-}
+
+
 .portfolio .video-portfolio video{
-    align-items: center;
     padding: 50px;
+
 }
 
 
